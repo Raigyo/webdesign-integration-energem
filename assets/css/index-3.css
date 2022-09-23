@@ -36,6 +36,39 @@ img {
   height: auto;
 }
 
+/* Fonts */
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato Regular"), local("Lato-Regular"),
+    url(../fonts/Lato-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Lato-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Lato Bold"), local("Lato-Bold"),
+    url(../fonts/Lato-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Work Sans"), local("Work-Sans"), local("WorkSans"),
+    url(../fonts/WorkSans-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Arial";
+  size-adjust: 97.38%;
+  ascent-override: 99%;
+  src: local("Arial");
+}
+
 /* Grid */
 
 #wrapper {
@@ -49,7 +82,7 @@ img {
 /* GENERAL */
 
 h2 {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 2em;
   font-weight: 700;
   text-transform: uppercase;
@@ -59,9 +92,9 @@ h2 {
 /* HEADER AND NAVIGATION */
 
 nav {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato-Bold", "Arial", sans-serif;
   font-size: 0.9375em;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 #logo {
@@ -73,7 +106,7 @@ nav {
 }
 
 #logo img {
-  /* width: 70%; */
+  max-width: 100%;
   height: 105px;
 }
 
@@ -99,6 +132,10 @@ nav {
   padding-left: 25px;
 }
 
+#nav1 a:hover {
+  text-decoration: underline;
+}
+
 #nav2 {
   background-color: #35940f;
   grid-area: 2 / 1 / auto / -1;
@@ -121,6 +158,30 @@ nav {
   padding-left: 25px;
 }
 
+#nav2 a:hover {
+  text-decoration: underline;
+}
+
+#nav2 .has-children {
+  position: relative;
+}
+
+#nav2 .drop-menu {
+  z-index: 1000;
+  display: none;
+  padding: 15px;
+  position: absolute;
+  width: 500px;
+  left: 50px;
+  background: #35940f;
+}
+
+#nav2 .has-children:hover > .drop-menu {
+  display: block;
+  /* flex: 1; */
+  z-index: 1000;
+}
+
 #account {
   grid-area: 2 / 8 / auto / -1;
   display: flex;
@@ -128,6 +189,7 @@ nav {
 
 .btn-account {
   background-color: #0166fe;
+  z-index: 1001;
   color: #ffffff;
   font-size: 1.5em;
   font-weight: 700;
@@ -210,6 +272,13 @@ nav {
   padding: 2px;
 }
 
+@media screen and (max-width: 1500px) {
+  #logo img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
 /* SLIDER */
 
 #slider {
@@ -283,7 +352,7 @@ nav {
 }
 
 .caption h2 {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 2em;
   font-weight: 700;
   text-shadow: 2px 2px 4px #000000;
@@ -330,14 +399,14 @@ nav {
 #offers .box h3 {
   margin: 10px 0;
   color: inherit;
-  font-family: "Work Sans";
+  font-family: "Work Sans", "Arial", sans-serif;
   font-size: 2em;
   color: #0166fe;
   text-align: center;
 }
 
 #offers .box p {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 1.625em;
   text-align: center;
 }
@@ -411,35 +480,6 @@ nav {
   cursor: pointer;
 }
 
-/* .card:hover {
-  box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.2);
-  transform: translateY(-4px);
-} */
-
-@media screen and (max-width: 540px) {
-  #container {
-    height: auto;
-  }
-  .box {
-    padding: 20px;
-  }
-  .card {
-    width: 49%;
-  }
-}
-@media screen and (max-width: 480px) {
-  .box h1 {
-    font-size: 1.5rem;
-  }
-  .cards {
-    justify-content: center;
-  }
-  .card {
-    margin-bottom: 20px;
-    width: 80%;
-  }
-}
-
 /* WHY */
 
 #why {
@@ -503,7 +543,7 @@ nav {
 } */
 
 .why-flex-container .text {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 1.75em;
   color: #fff;
 }
@@ -555,12 +595,12 @@ nav {
 }
 
 .advantages-flex-container .text h3 {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 2em;
 }
 
 .advantages-flex-container .text p {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 1.5em;
 }
 
@@ -583,7 +623,7 @@ nav {
 }
 
 #faq p {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 1.5em;
   color: #ffffff;
 }
@@ -611,8 +651,9 @@ nav {
   align-items: center;
   width: 100%;
   padding: 0 75px 50px 75px;
-  font-family: "Lato", sans-serif;
-  font-size: 0.875em;
+  font-family: "Lato-Bold", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 0.9375em;
 }
 
 .footer-nav {
@@ -653,7 +694,7 @@ nav {
 
 .footer-store p {
   padding-bottom: 10px;
-  padding-left: 100px;
+  padding-left: 40%;
   text-align: center;
 }
 
@@ -673,6 +714,137 @@ nav {
   align-items: center;
   background-color: #d9d9d9;
   padding-bottom: 25px;
-  font-family: "Lato", sans-serif;
-  font-size: 0.875em;
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 0.9375em;
+}
+
+/* Mobile */
+/* @media (max-width: 480px) {
+  #offers .cards {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  #offers .card {
+    width: 75%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+} */
+
+/* Mobile + Tablet */
+@media (min-width: 320px) and (max-width: 1024px) {
+  #wrapper {
+    display: block;
+  }
+  #nav1,
+  #nav2,
+  #account,
+  #btn-social,
+  #btn-search {
+    display: none;
+  }
+  #offers .cards {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  #offers .card {
+    width: 75%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  #offers .card-content {
+    height: 155px;
+    padding: 18px 15px;
+  }
+
+  #offers .box {
+    padding: 0px;
+    width: 100%;
+  }
+
+  #why h2 {
+    margin: 0px;
+  }
+
+  #why .why-flex-container,
+  #advantages .advantages-flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+  }
+
+  .why-flex-container .container {
+    padding-bottom: 25px;
+  }
+
+  .why-flex-container .box {
+    width: 85px;
+    height: 85px;
+  }
+
+  .advantages-flex-container .container {
+    width: 100%;
+  }
+
+  #faq p {
+    text-align: center;
+  }
+  #faq {
+    display: flex;
+    justify-content: center;
+    height: auto;
+  }
+  #faq .container {
+    padding: 25px;
+    flex-direction: column;
+  }
+
+  #footer {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column; */
+  }
+
+  .footer-nav,
+  .footer-contact,
+  .footer-store {
+    padding-top: 25px;
+    padding-left: 0px;
+    flex: 100%;
+    justify-content: center;
+  }
+
+  .footer-contact .contact {
+    justify-content: center;
+  }
+  .footer-store p {
+    padding-left: 0px;
+  }
+
+  .footer-store .footer-store-links {
+    justify-content: center;
+  }
+
+  .footer-btn-social ul {
+    justify-content: center;
+  }
+}
+/* Desktop */
+@media (min-width: 1025px) {
 }
