@@ -9,7 +9,9 @@
   <!--link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet'-->
   <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
   <link href="assets/css/index-3.css" rel="stylesheet">
+  <link href="assets/css/burger-menu.css" rel="stylesheet">
   <!--script src="assets/js/slider-3.js" defer></script-->
+  <script src="assets/js/burger-menu.js" defer></script>
 
 </head>
 
@@ -62,7 +64,7 @@
         </li>
       </ul>
     </nav>
-    <div id="account"><input class="btn-account" type="button" value="Mon compte"></div>
+    <div id="account"><button class="btn-account">Mon compte</div>
     <div id="btn-social">
       <ul>
         <li><a href="#0"><img src="assets/img/social-fb.svg" alt="Social media: facebook"></a></li>
@@ -76,6 +78,65 @@
         <img src="assets/img/magnifier.svg" alt="Soumettre la recherche">
       </button>
     </div>
+
+    <!-- Nav Mobile -->
+
+    <nav class="navigation" id="nav-mobile">
+
+      <input type="checkbox" class="navigationCheckbox" id="navi" aria-label="Main menu" role="button">
+      <label for="navi" id="menu-toggle" class="navigationBtn" tabindex="0">
+        <span class="navigationIcon"></span>
+      </label>
+      <div class="navigationBg"></div>
+      <div class="nav">
+        <button type="submit" class="searchButtonMobile">
+          <img src="assets/img/magnifier.svg" alt="Vers la page de recherche">
+        </button>
+        <ul class="navigationList">
+          <li class="navigationItem">
+            <a href="#0" class="links title">Énergem</a>
+          </li>
+          <span class="separator"></span>
+          <li class="navigationItem"><a href="#0" class="links" title="Lien vers la page Particuliers">Particuliers</a>
+          </li>
+          <li class="navigationItem"><a href="#0" class="links"
+              title="Lien vers la page Professionnels">Professionnels</a>
+          </li>
+          <li class="navigationItem"><a href="#0" class="links" title="Lien vers la page Entreprises">Entreprises</a>
+          </li>
+          <li class="navigationItem"><a href="#0" class="links"
+              title="Lien vers la page Collectivités">Collectivités</a>
+          </li>
+          <li class="navigationItem">
+            <a href="#0" class="links title">Offres</a>
+          </li>
+          <span class="separator"></span>
+          <li class="navigationItem"><a href="#0" class="links" title="Lien vers la page Offres d’énergie">Offres
+              d’énergie</a>
+          </li>
+          <li class="navigationItem"><a href="#0" class="links" title="Lien vers la page Choisir énergem">Choisir
+              énergem</a>
+          </li>
+          <li class="navigationItem"><a href="#0" class="links" title="Lien vers la page Déménager">Déménager</a>
+          </li>
+          <li class="navigationItem"><a href="#0" class="links" title="Lien vers la page Outils">Outils</a>
+          </li>
+          <li class="navigationItem">
+            <a href="#0" class="links title">Contact</a>
+          </li>
+          <span class="separator"></span>
+          <li class="navigationItem"><a href="#0" class="links" title="Lien vers la page Mon agence en ligne">Mon agence
+              en ligne</a>
+          </li>
+          <ul class="social-medias">
+            <li><a href="#0"><img src="assets/img/social-fb.svg" alt="Social media: facebook"></a></li>
+            <li><a href="#0"><img src="assets/img/social-tweeter.svg" alt="Social media: twitter"></a></li>
+            <li><a href="#0"><img src="assets/img/social-linked-in.svg" alt="Social media: linkedin"></a></li>
+          </ul>
+        </ul>
+
+      </div>
+    </nav>
 
     <!-- SLIDER -->
     <section id="slider">
