@@ -160,6 +160,7 @@ nav {
   color: white;
   text-align: left;
   padding-left: 25px;
+  padding-bottom: 100px;
 }
 
 #nav2 a:hover {
@@ -176,14 +177,30 @@ nav {
   padding: 15px;
   position: absolute;
   width: 500px;
+  top: 37px;
   left: 50px;
-  background: #35940f;
+  background: #d9d9d9;
 }
 
 #nav2 .has-children:hover > .drop-menu {
   display: block;
   /* flex: 1; */
+  transform: translateY(0px);
+  pointer-events: auto;
   z-index: 1000;
+}
+
+#nav2 .drop-menu li {
+  background: url("../img/menu-arrow.png") no-repeat left center;
+  padding: 0px 10px 2px 8px;
+  list-style: none;
+  margin: 0;
+  vertical-align: middle;
+}
+
+#nav2 .has-children li a {
+  color: #000000;
+  line-height: 0.4em;
 }
 
 #account {
@@ -218,10 +235,6 @@ nav {
   gap: 10px;
   align-items: center;
   justify-content: center;
-}
-
-#btn-social li {
-  /* padding-right: 20px; */
 }
 
 #btn-social img {
@@ -416,6 +429,7 @@ nav {
   justify-content: space-between;
   width: 100%;
 }
+
 .card {
   width: 23%;
   height: 340px;
@@ -505,6 +519,7 @@ nav {
 .why-flex-container .container {
   justify-content: center;
   text-align: center;
+  padding: 10px;
 }
 
 .why-flex-container .box {
@@ -524,22 +539,6 @@ nav {
   width: 50%;
   height: auto;
 }
-
-/* .why-flex-container .box {
-  border-radius: 50%;
-  background-color: #35940f;
-  overflow: hidden;
-  height: 138px;
-  width: 138px;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-}
-
-.why-flex-container .box img {
-  width: 50%;
-  height: auto;
-} */
 
 .why-flex-container .text {
   font-family: "Lato", "Arial", sans-serif;
@@ -578,6 +577,10 @@ nav {
   height: 600px;
   width: 100%;
   object-fit: cover;
+}
+
+.advantages-flex-container .container {
+  background-color: rgba(1, 102, 254, 0.75);
 }
 
 .advantages-flex-container .text {
@@ -843,7 +846,12 @@ nav {
   }
 
   .advantages-flex-container .container {
-    width: 100%;
+    width: 88%;
+  }
+
+  #advantages .advantages-flex-container {
+    padding-top: 25px;
+    background-color: #35940f;
   }
 
   #faq p {
@@ -903,6 +911,16 @@ nav {
   #logo img {
     max-width: 100%;
     height: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .advantages-flex-container .container {
+    width: 100%;
+  }
+
+  #advantages .advantages-flex-container {
+    padding-top: 0px;
   }
 }
 
