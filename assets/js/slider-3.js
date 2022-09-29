@@ -3,9 +3,16 @@ const next = document.querySelector(".next");
 const carousel = document.querySelector(".carousel");
 const item = document.querySelector(".item");
 const images = document.querySelector(".carousel").children;
+const dots = document.querySelectorAll(".dot");
 const totalImages = images.length;
 let index = 0;
 const intervalId = setInterval("nextImage('next')", 4000);
+
+dots.forEach((dot, i) => {
+  console.log(dot);
+  if (dot.classList.contains("active")) dot.classList.remove("active");
+  if (i === index) dot.classList.add("active");
+});
 
 prev.addEventListener("click", () => {
   clearTimeout(intervalId);

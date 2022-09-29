@@ -6,13 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Energem</title>
-  <!--link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet'-->
-  <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
-  <link href="assets/css/index-3.css" rel="stylesheet">
+  <link href="assets/css/index.css" rel="stylesheet">
   <link href="assets/css/burger-menu.css" rel="stylesheet">
-  <!--script src="assets/js/slider-3.js" defer></script-->
+  <link href="assets/css/slider.css" rel="stylesheet">
+  <script src="assets/js/slider.js" defer></script>
   <script src="assets/js/burger-menu.js" defer></script>
-
 </head>
 
 <body>
@@ -140,12 +138,11 @@
 
     <!-- SLIDER -->
     <section id="slider">
-      <div class="navigation">
-        <div class="prev nav-btn"><img src="assets/img/arrow-left.png" alt="Image précédente"></div>
-        <div class="next nav-btn"><img src="assets/img/arrow-right.png" alt="Image suivante"></div>
-      </div>
-      <div class="carousel">
-        <div class="item main">
+      <div class="carousel-wrapper" js-carousel-wrapper>
+        <!--div class="slide-number">
+          <span class="slide-number-text" js-slide-number-text> 1 / 4</span>
+        </div-->
+        <div class="carousel-item" js-carousel-item data-active-slide>
           <a href="#0">
             <img src="assets/img/slide-01.jpg" alt="Offre 1" />
             <div class="caption">
@@ -154,7 +151,7 @@
             </div>
           </a>
         </div>
-        <div class="item">
+        <div class="carousel-item" js-carousel-item>
           <a href="#0">
             <img src="assets/img/slide-02.jpg" alt="Offre 2" />
             <div class="caption">
@@ -163,7 +160,8 @@
             </div>
           </a>
         </div>
-        <div class="item"><a href="#0">
+        <div class="carousel-item" js-carousel-item>
+          <a href="#0">
             <img src="assets/img/slide-03.jpg" alt="Offre 3" />
             <div class="caption">
               <h2>Pellentesque at dapibus purus. Nullam eget erat eu erat aliquam rutrum in non felis.</h2>
@@ -171,7 +169,60 @@
             </div>
           </a>
         </div>
-        <div class="item">
+        <div class="carousel-item" js-carousel-item>
+          <a href="#0">
+            <img src="assets/img/slide-04.jpg" alt="Offre 4" />
+            <div class="caption">
+              <h2>Donec tellus elit, hendrerit condimentum fringilla eget, vehicula in lorem. Vestibulum aliquam rutrum
+                metus,
+                a iaculis lacus consectetur non</h2>
+              <button class="btn-more">En savoir plus</button>
+            </div>
+          </a>
+        </div>
+        <div class="prev nav-btn carousel-arrow prev" data-carousel-arrows data-dir="prev"><img
+            src="assets/img/arrow-left.png" alt="Image précédente"></div>
+        <div class="next nav-btn carousel-arrow next" data-carousel-arrows data-dir="next"><img
+            src="assets/img/arrow-right.png" alt="Image suivante"></div>
+        <div class="carousel-dots" data-carousel-dots>
+          <button type="button" class="dots" data-active-dot js-data-dots data-dots-index="1"> </button>
+          <button type="button" class="dots" js-data-dots data-dots-index="2"> </button>
+          <button type="button" class="dots" js-data-dots data-dots-index="3"> </button>
+          <button type="button" class="dots" js-data-dots data-dots-index="4"> </button>
+        </div>
+      </div>
+      <!--div class="navigation">
+        <div class="prev nav-btn"><img src="assets/img/arrow-left.png" alt="Image précédente"></div>
+        <div class="next nav-btn"><img src="assets/img/arrow-right.png" alt="Image suivante"></div>
+      </div>
+      <div class="carousel">
+        <div class="item main fade">
+          <a href="#0">
+            <img src="assets/img/slide-01.jpg" alt="Offre 1" />
+            <div class="caption">
+              <h2>Nous offrons deux énergies un seul founisseur et un prix fixe pour l'électricité et le gaz.</h2>
+              <button class="btn-more">En savoir plus</button>
+            </div>
+          </a>
+        </div>
+        <div class="item fade">
+          <a href="#0">
+            <img src="assets/img/slide-02.jpg" alt="Offre 2" />
+            <div class="caption">
+              <h2>Lorem ipsum dolor sit amet.</h2>
+              <button class="btn-more">En savoir plus</button>
+            </div>
+          </a>
+        </div>
+        <div class="item fade"><a href="#0">
+            <img src="assets/img/slide-03.jpg" alt="Offre 3" />
+            <div class="caption">
+              <h2>Pellentesque at dapibus purus. Nullam eget erat eu erat aliquam rutrum in non felis.</h2>
+              <button class="btn-more">En savoir plus</button>
+            </div>
+          </a>
+        </div>
+        <div class="item fade">
           <a href="#0">
             <img src="assets/img/slide-04.jpg" alt="Offre 4" />
             <div class="caption">
@@ -183,6 +234,12 @@
           </a>
         </div>
       </div>
+      <div class="dots-container">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div-->
     </section>
 
     <!-- OFFRES -->
@@ -269,7 +326,8 @@
       <div class="advantages-flex-container">
         <div class="container">
           <div class="box img1"><img src="assets/img/micheile-dot-com-lZ_4nPFKcV8-unsplash.jpg"
-              alt="Calculer votre prix"></div>
+              alt="Calculer votre prix">
+          </div>
           <div class="text">
             <h3>Calculer votre prix</h3>
             <p>Lorem ipsum dolor sit amet.</p>
