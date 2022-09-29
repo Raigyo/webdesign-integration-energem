@@ -913,10 +913,6 @@ nav {
   #footer {
     display: flex;
     flex-direction: column;
-    /* align-items: center;
-    flex-wrap: wrap;
-    align-content: center;
-    flex-direction: column; */
   }
 
   .footer-nav,
@@ -943,9 +939,6 @@ nav {
   .footer-btn-social ul {
     justify-content: center;
   }
-}
-/* Desktop */
-@media (min-width: 1025px) {
 }
 
 /* Logo position */
@@ -979,6 +972,13 @@ nav {
     width: 50px;
     top: 30px;
     right: 37px;
+  }
+
+  #nav-mobile .searchButtonMobile {
+    height: 50px;
+    width: 50px;
+    top: 30px;
+    right: 104px;
   }
 
   .footer-nav {

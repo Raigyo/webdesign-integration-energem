@@ -1,45 +1,4 @@
 /* Menu for mobile */
-/* .project-nav-mobile {
-  overflow: hidden;
-  background-color: #000000;
-  position: fixed;
-  top: 0;
-  left: 0;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 80px;
-  z-index: 10000;
-} */
-
-/* .project-nav-mobile li {
-  float: left;
-  display: block;
-
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-} */
-
-/* .project-nav-mobile li img {
-  width: 250px;
-  margin: 0;
-  padding: 0;
-} */
-
-/* Burger menu */
-
-/* #nav-mobile {
-  font-size-adjust: 0.6em;
-  margin: 0;
-  padding: 0;
-}
-
-#nav-mobile ul li {
-  display: block;
-} */
 
 .searchButtonMobile {
   background-color: #fff;
