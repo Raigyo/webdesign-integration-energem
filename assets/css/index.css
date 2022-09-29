@@ -432,7 +432,8 @@ nav {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding-bottom: 35px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 #offers .box {
@@ -440,8 +441,6 @@ nav {
 }
 
 #offers .box h2 {
-  margin: 10px 0;
-  padding: 25px 0px;
   text-align: center;
 }
 
@@ -465,6 +464,7 @@ nav {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
+  margin-top: 50px;
 }
 
 .card {
@@ -535,26 +535,23 @@ nav {
   background-image: url("../img/why-bckgr.jpg");
   height: max-content;
   background-size: cover;
-  padding-bottom: 35px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 #why h2 {
-  margin: 10px 0;
-  padding: 25px 0px;
   text-align: center;
 }
 
 .why-flex-container {
-  margin-top: 0;
+  margin-top: 50px;
   display: flex;
   justify-content: space-around;
-  padding: 0 84px;
 }
 
 .why-flex-container .container {
   justify-content: center;
   text-align: center;
-  padding: 10px;
 }
 
 .why-flex-container .box {

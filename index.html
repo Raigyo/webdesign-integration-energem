@@ -6,46 +6,411 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Energem</title>
-  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
   <link href="assets/css/index.css" rel="stylesheet">
-
+  <link href="assets/css/burger-menu.css" rel="stylesheet">
+  <link href="assets/css/slider.css" rel="stylesheet">
+  <script src="assets/js/slider.js" defer></script>
+  <script src="assets/js/burger-menu.js" defer></script>
 </head>
 
 <body>
-  <header class="logo">
-    <h1><img src="assets/img/logo-energem.png" alt="Energem site web: logo"></h1>
-  </header>
-  <nav class="nav-top">
-    <ul>
-      <li><a href="#0">Particuliers</a></li>
-      <li><a href="#0">Professionnels</a></li>
-      <li><a href="#0">Entreprises</a></li>
-      <li><a href="#0">Collectivités</a></li>
-    </ul>
-  </nav>
-  <div class="nav-bottom-left"></div>
-  <nav class="nav-bottom">
-    <ul>
-      <li><a href="#0">Offres d’énergie</a></li>
-      <li><a href="#0">Choisir énergem</a></li>
-      <li><a href="#0">Déménager</a></li>
-      <li><a href="#0">Outils</a></li>
-    </ul>
-    <input class="btn-account" type="button" value="Mon compte">
-    <ul class="btn-social">
-      <li><a href="#0"><img src="assets/img/social-fb.svg" alt="Social media: facebook"></a></li>
-      <li><a href="#0"><img src="assets/img/social-tweeter.svg" alt="Social media: twitter"></a></li>
-      <li><a href="#0"><img src="assets/img/social-tweeter.svg" alt="Social media: linkedin"></a></li>
-    </ul>
-    <input type="text" class="searchTerm" placeholder="Rechercher dans le site">
-    <button type="submit" class="searchButton">
-      <img src="assets/img/magnifier.svg" alt="Soumettre la recherche">
-    </button>
-  </nav>
+  <div id="wrapper">
+    <!-- Header & Navigation -->
+    <header id="logo">
+      <img src="assets/img/logo-energem.png" alt="Energem site web: logo">
+    </header>
+    <nav id="nav1">
+      <ul>
+        <li><a href="#0">Particuliers</a></li>
+        <li><a href="#0">Professionnels</a></li>
+        <li><a href="#0">Entreprises</a></li>
+        <li><a href="#0">Collectivités</a></li>
+      </ul>
 
+    </nav>
+    <nav id="nav2">
+      <ul class="menu">
+        <li class="has-children"><a href="#0">Offres d’énergie</a>
+          <ul class="drop-menu">
+            <li><a href="#0">Électricité verte</a></li>
+            <li><a href="#0">Gaz</a></li>
+            <li><a href="#0">2 énergies</a></li>
+          </ul>
+        </li>
+        <li class="has-children"><a href="#0">Choisir énergem</a>
+          <ul class="drop-menu">
+            <li><a href="#0">Je choisis énergem</a></li>
+            <li><a href="#0">Changer de fournisseur</a></li>
+          </ul>
+        </li>
+        </li>
+        <li class="has-children"><a href="#0">Déménager</a>
+          <ul class="drop-menu">
+            <li><a href="#0">J’emménage - je déménage</a></li>
+            <li><a href="#0">Je réussis mon déménagement</a></li>
+          </ul>
+        </li>
+        </li>
+        <li class="has-children"><a href="#0">Outils</a>
+          <ul class="drop-menu">
+            <li><a href="#0">J'estime ma consommation électricité / gaz</a></li>
+            <li><a href="#0">Je réalise des économies d'énergie</a></li>
+            <li><a href="#0">Quiz éco-citoyen</a></li>
+            <li><a href="#0">Quiz éco-calculateur</a></li>
+            <li><a href="#0">Quiz sécurité éléctrique</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div id="account"><button class="btn-account">Mon compte</div>
+    <div id="btn-social">
+      <ul>
+        <li><a href="#0"><img src="assets/img/social-fb.svg" alt="Social media: facebook"></a></li>
+        <li><a href="#0"><img src="assets/img/social-tweeter.svg" alt="Social media: twitter"></a></li>
+        <li><a href="#0"><img src="assets/img/social-linked-in.svg" alt="Social media: linkedin"></a></li>
+      </ul>
+    </div>
+    <div id="btn-search">
+      <input type="text" class="searchTerm" placeholder="Rechercher dans le site">
+      <button type="submit" class="searchButton">
+        <img src="assets/img/magnifier.svg" alt="Soumettre la recherche">
+      </button>
+    </div>
 
+    <!-- Nav Mobile -->
 
+    <nav class="navigation" id="nav-mobile">
+
+      <input type="checkbox" class="navigationCheckbox" id="navi" aria-label="Main menu" role="button">
+      <label for="navi" id="menu-toggle" class="navigationBtn" tabindex="0">
+        <span class="navigationIcon"></span>
+      </label>
+      <div class="navigationBg"></div>
+      <div class="nav">
+        <button type="submit" class="searchButtonMobile">
+          <img src="assets/img/magnifier.svg" alt="Vers la page de recherche">
+        </button>
+        <ul class="navigationList">
+          <li class="navigationItem">
+            <a href="#0" class="links title">Énergem</a>
+          </li>
+          <span class="separator"></span>
+          <li class="navigationItem"><a href="#0" class="links" title="Lien vers la page Particuliers">Particuliers</a>
+          </li>
+          <li class="navigationItem"><a href="#0" class="links"
+              title="Lien vers la page Professionnels">Professionnels</a>
+          </li>
+          <li class="navigationItem"><a href="#0" class="links" title="Lien vers la page Entreprises">Entreprises</a>
+          </li>
+          <li class="navigationItem"><a href="#0" class="links"
+              title="Lien vers la page Collectivités">Collectivités</a>
+          </li>
+          <li class="navigationItem">
+            <a href="#0" class="links title">Offres</a>
+          </li>
+          <span class="separator"></span>
+          <li class="navigationItem"><a href="#0" class="links" title="Lien vers la page Offres d’énergie">Offres
+              d’énergie</a>
+          </li>
+          <li class="navigationItem"><a href="#0" class="links" title="Lien vers la page Choisir énergem">Choisir
+              énergem</a>
+          </li>
+          <li class="navigationItem"><a href="#0" class="links" title="Lien vers la page Déménager">Déménager</a>
+          </li>
+          <li class="navigationItem"><a href="#0" class="links" title="Lien vers la page Outils">Outils</a>
+          </li>
+          <li class="navigationItem">
+            <a href="#0" class="links title">Contact</a>
+          </li>
+          <span class="separator"></span>
+          <li class="navigationItem"><a href="#0" class="links" title="Lien vers la page Mon agence en ligne">Mon agence
+              en ligne</a>
+          </li>
+          <ul class="social-medias">
+            <li><a href="#0"><img src="assets/img/social-fb.svg" alt="Social media: facebook"></a></li>
+            <li><a href="#0"><img src="assets/img/social-tweeter.svg" alt="Social media: twitter"></a></li>
+            <li><a href="#0"><img src="assets/img/social-linked-in.svg" alt="Social media: linkedin"></a></li>
+          </ul>
+        </ul>
+
+      </div>
+    </nav>
+
+    <!-- SLIDER -->
+    <section id="slider">
+      <div class="carousel-wrapper" js-carousel-wrapper>
+        <!--div class="slide-number">
+          <span class="slide-number-text" js-slide-number-text> 1 / 4</span>
+        </div-->
+        <div class="carousel-item" js-carousel-item data-active-slide>
+          <a href="#0">
+            <img src="assets/img/slide-01.jpg" alt="Offre 1" />
+            <div class="caption">
+              <h2>Nous offrons deux énergies un seul founisseur et un prix fixe pour l'électricité et le gaz.</h2>
+              <button class="btn-more">En savoir plus</button>
+            </div>
+          </a>
+        </div>
+        <div class="carousel-item" js-carousel-item>
+          <a href="#0">
+            <img src="assets/img/slide-02.jpg" alt="Offre 2" />
+            <div class="caption">
+              <h2>Lorem ipsum dolor sit amet.</h2>
+              <button class="btn-more">En savoir plus</button>
+            </div>
+          </a>
+        </div>
+        <div class="carousel-item" js-carousel-item>
+          <a href="#0">
+            <img src="assets/img/slide-03.jpg" alt="Offre 3" />
+            <div class="caption">
+              <h2>Pellentesque at dapibus purus. Nullam eget erat eu erat aliquam rutrum in non felis.</h2>
+              <button class="btn-more">En savoir plus</button>
+            </div>
+          </a>
+        </div>
+        <div class="carousel-item" js-carousel-item>
+          <a href="#0">
+            <img src="assets/img/slide-04.jpg" alt="Offre 4" />
+            <div class="caption">
+              <h2>Donec tellus elit, hendrerit condimentum fringilla eget, vehicula in lorem. Vestibulum aliquam rutrum
+                metus,
+                a iaculis lacus consectetur non</h2>
+              <button class="btn-more">En savoir plus</button>
+            </div>
+          </a>
+        </div>
+        <div class="prev nav-btn carousel-arrow prev" data-carousel-arrows data-dir="prev"><img
+            src="assets/img/arrow-left.png" alt="Image précédente"></div>
+        <div class="next nav-btn carousel-arrow next" data-carousel-arrows data-dir="next"><img
+            src="assets/img/arrow-right.png" alt="Image suivante"></div>
+        <div class="carousel-dots" data-carousel-dots>
+          <button type="button" class="dots" data-active-dot js-data-dots data-dots-index="1"> </button>
+          <button type="button" class="dots" js-data-dots data-dots-index="2"> </button>
+          <button type="button" class="dots" js-data-dots data-dots-index="3"> </button>
+          <button type="button" class="dots" js-data-dots data-dots-index="4"> </button>
+        </div>
+      </div>
+      <!--div class="navigation">
+        <div class="prev nav-btn"><img src="assets/img/arrow-left.png" alt="Image précédente"></div>
+        <div class="next nav-btn"><img src="assets/img/arrow-right.png" alt="Image suivante"></div>
+      </div>
+      <div class="carousel">
+        <div class="item main fade">
+          <a href="#0">
+            <img src="assets/img/slide-01.jpg" alt="Offre 1" />
+            <div class="caption">
+              <h2>Nous offrons deux énergies un seul founisseur et un prix fixe pour l'électricité et le gaz.</h2>
+              <button class="btn-more">En savoir plus</button>
+            </div>
+          </a>
+        </div>
+        <div class="item fade">
+          <a href="#0">
+            <img src="assets/img/slide-02.jpg" alt="Offre 2" />
+            <div class="caption">
+              <h2>Lorem ipsum dolor sit amet.</h2>
+              <button class="btn-more">En savoir plus</button>
+            </div>
+          </a>
+        </div>
+        <div class="item fade"><a href="#0">
+            <img src="assets/img/slide-03.jpg" alt="Offre 3" />
+            <div class="caption">
+              <h2>Pellentesque at dapibus purus. Nullam eget erat eu erat aliquam rutrum in non felis.</h2>
+              <button class="btn-more">En savoir plus</button>
+            </div>
+          </a>
+        </div>
+        <div class="item fade">
+          <a href="#0">
+            <img src="assets/img/slide-04.jpg" alt="Offre 4" />
+            <div class="caption">
+              <h2>Donec tellus elit, hendrerit condimentum fringilla eget, vehicula in lorem. Vestibulum aliquam rutrum
+                metus,
+                a iaculis lacus consectetur non</h2>
+              <button class="btn-more">En savoir plus</button>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="dots-container">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div-->
+    </section>
+
+    <!-- OFFRES -->
+    <section id="offers">
+      <div class="box">
+        <h2>Nos offres</h2>
+        <div class="cards">
+          <article class="card">
+            <a href="#">
+              <figure class="card-thumb">
+                <img src="assets/img/picto-elec.png" alt="Fixo élec">
+              </figure>
+              <h3 class="card-title">Fixo élec</h3>
+              <div class="card-content">
+                <p class="card-excerpt">L'électricité 100% verte à prix bloqué</p>
+                <button class="card-btn-more">En savoir plus</button>
+              </div>
+            </a>
+          </article>
+          <article class="card">
+            <a href="#">
+              <figure class="card-thumb">
+                <img src="assets/img/picto-gaz.png" alt="Fixo gaz">
+              </figure>
+              <h3 class="card-title">Fixo gaz</h3>
+              <div class="card-content">
+                <p class="card-excerpt">Un prix bloqué pour plus de sérénité</p>
+                <button class="card-btn-more">En savoir plus</button>
+              </div>
+            </a>
+          </article>
+          <article class="card">
+            <a href="#">
+              <figure class="card-thumb">
+                <img class="fixo-combi" src="assets/img/picto-combi.png" alt="Fixo 2 énergies">
+              </figure>
+              <h3 class="card-title">Fixo 2 énergies</h3>
+              <div class="card-content">
+                <p class="card-excerpt">Un seul fournisseur pour l'électricité et le gaz à prix fixe</p>
+                <button class="card-btn-more">En savoir plus</button>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY -->
+    <section id="why">
+      <h2>Pourquoi choisir Énergem ?</h2>
+      <div class="why-flex-container">
+        <div class="container">
+          <div class="box"><img src="assets/img/picto-zero-frais.png" alt=""></div>
+          <div class="text">Zéro frais de souscription</div>
+        </div>
+        <div class="container">
+          <div class="box"><img class="why-img-resize" src="assets/img/picto-tranquilite.png" alt="Tranquilité assurée">
+          </div>
+          <div class="text">Tranquilité assurée</div>
+        </div>
+        <div class="container">
+          <div class="box"><img src="assets/img/picto-sans-engagement.png" alt="Sans engagement"></div>
+          <div class="text">Sans engagement</div>
+        </div>
+        <div class="container">
+          <div class="box"><img src="assets/img/picto-fournisseur-confiance.png" alt="Fournisseur de confiance"></div>
+          <div class="text">Fournisseur de confiance</div>
+        </div>
+        <div class="container">
+          <div class="box"><img class="why-img-resize" src="assets/img/picto-satisfait-rembourse.png"
+              alt="Satisfait ou remboursé"></div>
+          <div class="text">Satisfait ou remboursé</div>
+        </div>
+        <div class="container">
+          <div class="box"><img class="why-img-resize" src="assets/img/picto-simplicite-rapidite.png"
+              alt="Simplicité & rapidité"></div>
+          <div class="text">Simplicité & rapidité</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADAVANTAGES -->
+    <section id="advantages">
+      <div class="advantages-flex-container">
+        <div class="container">
+          <div class="box img1"><img src="assets/img/micheile-dot-com-lZ_4nPFKcV8-unsplash.jpg"
+              alt="Calculer votre prix">
+          </div>
+          <div class="text">
+            <h3>Calculer votre prix</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="box img2"><img src="assets/img/pexels-mart-production-7415039.jpg" alt="Je déménage"></div>
+          <div class="text">
+            <h3>Je déménage</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="box img3"><img src="assets/img/pexels-amina-filkins-5413725.jpg" alt="Avantages client"></div>
+          <div class="text">
+            <h3>Avantages client</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="container">
+        <p>Une question, un conseil ? Accédez à notre Foire Aux Questions pour trouver la réponse rapidement !</p>
+        <button class="faq-btn-more">Foire aux questions</button>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <section id="footer">
+      <nav class="footer-nav">
+        <ul>
+          <li>Particuliers</li>
+          <li>Professionnels</li>
+          <li>Entreprises</li>
+          <li>Collectivités</li>
+        </ul>
+        <ul>
+          <li>Offres d’énergie</li>
+          <li>Choisir énergem</li>
+          <li>Déménager</li>
+          <li>Outils</li>
+        </ul>
+        <ul>
+          <li>Mentions légales</li>
+          <li>Politique de cookies</li>
+          <li>Conditions générales</li>
+          <li>Jobs</li>
+        </ul>
+      </nav>
+      <div class="footer-contact">
+        <div class="contact">
+          <img src="assets/img/picto-letter.png" alt="Vers formulaire de contact">
+          <p>Formulaire de contact</p>
+        </div>
+        <div class="contact">
+          <img src="assets/img/picto-phone.png" alt="Numéro de téléphone">
+          <p>09 69 39 02 39 (prix d'un appel local)</p>
+        </div>
+        <div class="footer-btn-social">
+          <ul>
+            <li><a href="#0"><img src="assets/img/social-fb.svg" alt="Social media: facebook"></a></li>
+            <li><a href="#0"><img src="assets/img/social-tweeter.svg" alt="Social media: twitter"></a></li>
+            <li><a href="#0"><img src="assets/img/social-tweeter.svg" alt="Social media: linkedin"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-store">
+        <p>Téléchargez l’application énergem</p>
+        <div class="footer-store-links">
+          <img src="assets/img/googleplay-fr.webp" alt="Vers Google play">
+          <img src="assets/img/appstore-fr.webp" alt="Vers l'Appstore">
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  <div id="copyright">
+    <p>©2022 énergem - Tous droits réservés</p>
+  </div>
 </body>
 
 </html>
