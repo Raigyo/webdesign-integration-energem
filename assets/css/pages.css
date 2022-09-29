@@ -97,6 +97,12 @@ nav {
   font-weight: bold;
 }
 
+section p {
+  font-family: "Lato-Bold", "Arial", sans-serif;
+  font-size: 1em;
+  color: #fff;
+}
+
 #logo {
   width: 300px;
   position: absolute;
@@ -291,140 +297,123 @@ nav {
   padding: 2px;
 }
 
-/* SLIDER */
+/* BREAD CRUMB */
 
-#slider {
+#breadcrumb {
   grid-area: 4 / 1 / 5 / -1;
+  background-color: #0166fe;
 }
 
-.navigationSlider .prev {
-  position: absolute;
-  z-index: 5;
-  font-size: 1.5625em;
-  top: 45%;
-  left: 25px;
-  font-weight: 700;
+ul.breadcrumb {
+  padding: 10px 85px;
+  list-style: none;
 }
 
-.navigationSlider .next {
-  right: 25px;
-  position: absolute;
-  font-size: 25px;
-  z-index: 6;
-  top: 45%;
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 0.875em;
+  font-family: "Lato", "Arial", sans-serif;
+  color: #fff;
 }
 
-.navigation .nav-btn {
-  cursor: pointer;
-  width: 70px;
-  height: 52px;
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  text-decoration: underline;
+}
+
+/* CHOICE */
+
+#choice {
+  grid-area: 5 / 1 / 6 / -1;
+  background-color: #35940f;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
+  flex-direction: row;
 }
 
-/* .navigation .nav-btn:hover {
-  background: white;
-} */
-
-.carousel {
-  height: 599px;
+#choice div.image {
+  width: 55%;
+  height: 360px;
 }
 
-.carousel img {
-  max-width: 100%;
-  height: 600px;
+#choice div.image img {
   width: 100%;
+  height: 360px;
   object-fit: cover;
 }
 
-.item {
-  position: relative;
-  display: none;
-  overflow: hidden;
-}
-
-.main {
-  display: block;
-}
-
-.caption {
-  position: absolute;
-  display: block;
-  padding: 5px;
-  top: 50%;
-  left: 20%;
-  transform: translate(-20%, -50%);
-  width: 26%;
-  justify-content: center;
-  align-items: center;
-  color: rgb(255, 255, 255);
-  background: rgba(0, 0, 0, 0.2);
-}
-
-.caption h2 {
-  font-family: "Lato", "Arial", sans-serif;
-  font-size: 2em;
-  font-weight: 700;
-  text-shadow: 2px 2px 4px #000000;
-  margin-bottom: 25px;
-}
-.caption .btn-more {
-  position: relative;
-  left: 55%;
+#choice div.text {
+  width: 45%;
   background-color: #35940f;
-  color: #ffffff;
-  font-size: 1em;
-  font-weight: 700;
-  border: 0px;
-  margin: 10px 25px;
-  padding: 10px 20px;
-  border-radius: 30px;
-  cursor: pointer;
-}
-
-.dots-container {
-  display: flex;
-  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
   align-items: center;
-  padding: 10px;
 }
 
-.dots-container .dot {
-  cursor: pointer;
-  margin: 5px;
-  width: 20px;
-  height: 20px;
-  color: #333;
-  border-radius: 50%;
-  background-color: #dfd6ce;
+#choice div.text h2 {
+  text-align: center;
+  padding-bottom: 25px;
 }
 
-.dots-container .dot.active {
+#choice div.text p {
+  text-align: left;
+  padding: 0px 50px;
+}
+
+/* QUALITY */
+
+#quality {
+  grid-area: 6 / 1 / 7 / -1;
   background-color: #0166fe;
-  border: 2px solid #0166fe;
+  display: flex;
+  flex-direction: row;
 }
 
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+#quality div.text {
+  width: 70%;
+  background-color: #0166fe;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  align-items: center;
 }
 
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
+#quality div.text h2 {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+#quality div.text p {
+  text-align: left;
+  padding: 0px 50px;
+}
+
+#quality div.image {
+  width: 30%;
+}
+
+#quality div.image img {
+  width: 100%;
+  height: 360px;
+  object-fit: contain;
 }
 
 /* OFFERS */
 
 #offers {
-  grid-area: 5 / 1 / 6 / -1;
+  grid-area: 7 / 1 / 8 / -1;
   background-image: url("../img/offers-bckgr.jpg");
   height: max-content;
   background-size: cover;
@@ -528,116 +517,6 @@ nav {
   cursor: pointer;
 }
 
-/* WHY */
-
-#why {
-  grid-area: 6 / 1 / 7 / -1;
-  background-image: url("../img/why-bckgr.jpg");
-  height: max-content;
-  background-size: cover;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-#why h2 {
-  text-align: center;
-}
-
-.why-flex-container {
-  margin-top: 50px;
-  display: flex;
-  justify-content: space-around;
-}
-
-.why-flex-container .container {
-  justify-content: center;
-  text-align: center;
-}
-
-.why-flex-container .box {
-  display: inline-block;
-  position: relative;
-  background-color: #35940f;
-  width: 138px;
-  height: 138px;
-  overflow: hidden;
-  border-radius: 50%;
-}
-.why-flex-container .box img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50%;
-  height: auto;
-}
-
-.why-flex-container .text {
-  font-family: "Lato", "Arial", sans-serif;
-  font-size: 1.75em;
-  color: #fff;
-}
-
-.why-flex-container .box .why-img-resize {
-  width: 35%;
-  height: auto;
-}
-
-/* ADAVANTAGES */
-
-#advantages {
-  grid-area: 7 / 1 / 8 / -1;
-  background-size: cover;
-  width: 100%;
-}
-
-.advantages-flex-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.advantages-flex-container .container {
-  flex-grow: 1;
-  width: calc(33% - 2px);
-  height: 599px;
-  position: relative;
-  display: inline-block;
-}
-
-.advantages-flex-container .box img {
-  max-width: 100%;
-  height: 600px;
-  width: 100%;
-  object-fit: cover;
-}
-
-.advantages-flex-container .container {
-  background-color: rgba(1, 102, 254, 0.75);
-}
-
-.advantages-flex-container .text {
-  position: absolute;
-  background-color: rgba(1, 102, 254, 0.75);
-  top: 85%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  width: 100%;
-  height: 133px;
-  padding-top: 25px;
-}
-
-.advantages-flex-container .text h3 {
-  font-family: "Lato", "Arial", sans-serif;
-  font-size: 2em;
-}
-
-.advantages-flex-container .text p {
-  font-family: "Lato", "Arial", sans-serif;
-  font-size: 1.5em;
-}
-
 /* FAQ */
 
 #faq {
@@ -677,7 +556,7 @@ nav {
 /* FOOTER */
 
 #footer {
-  grid-area: 10 / 1 / 11 / -1;
+  grid-area: 9 / 1 / 10 / -1;
   background-color: #d9d9d9;
   /* height: 250px; */
   display: flex;
@@ -797,26 +676,40 @@ nav {
     margin: 20px 85px;
   }
 
-  #slider .carousel-item .caption {
+  #choice {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  #choice div.text {
     width: 100%;
-    padding: 0 5px;
-    left: 50%;
-    transform: translateX(-50%);
   }
 
-  #slider .carousel-item .caption h2 {
-    font-size: 1.2em;
-    text-align: center;
-  }
-  #slider .carousel-item .caption .btn-more {
-    font-size: 1.2em;
-    margin: 0;
-    left: 50%;
-    transform: translateX(-50%);
+  #choice div.image {
+    width: 80%;
   }
 
-  #slider .carousel-wrapper .carousel-arrow {
-    top: 75%;
+  #choice div.image img {
+    height: auto;
+  }
+
+  #quality {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #quality div.text {
+    width: 100%;
+  }
+
+  #quality div.image {
+    width: 80%;
+  }
+
+  #quality div.image img {
+    height: auto;
   }
 
   .card-content {
@@ -858,43 +751,6 @@ nav {
 
   #offers .box p {
     font-size: 1em;
-  }
-
-  #why h2 {
-    margin: 0px;
-  }
-
-  #why {
-    background-image: none;
-    background-color: #0166fe;
-  }
-
-  #why .why-flex-container,
-  #advantages .advantages-flex-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    align-content: center;
-    flex-direction: column;
-  }
-
-  .why-flex-container .container {
-    padding-bottom: 25px;
-  }
-
-  .why-flex-container .box {
-    width: 85px;
-    height: 85px;
-  }
-
-  .advantages-flex-container .container {
-    width: 88%;
-  }
-
-  #advantages .advantages-flex-container {
-    padding-top: 25px;
-    background-color: #35940f;
   }
 
   #faq p {

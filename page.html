@@ -6,10 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Energem</title>
-  <link href="assets/css/index.css" rel="stylesheet">
+  <link href="assets/css/pages.css" rel="stylesheet">
   <link href="assets/css/burger-menu.css" rel="stylesheet">
-  <link href="assets/css/slider.css" rel="stylesheet">
-  <script src="assets/js/slider.js" defer></script>
   <script src="assets/js/burger-menu.js" defer></script>
 </head>
 
@@ -136,110 +134,38 @@
       </div>
     </nav>
 
-    <!-- SLIDER -->
-    <section id="slider">
-      <div class="carousel-wrapper" js-carousel-wrapper>
-        <!--div class="slide-number">
-          <span class="slide-number-text" js-slide-number-text> 1 / 4</span>
-        </div-->
-        <div class="carousel-item" js-carousel-item data-active-slide>
-          <a href="#0">
-            <img src="assets/img/slide-01.jpg" alt="Offre 1" />
-            <div class="caption">
-              <h2>Nous offrons deux énergies un seul founisseur et un prix fixe pour l'électricité et le gaz.</h2>
-              <button class="btn-more">En savoir plus</button>
-            </div>
-          </a>
-        </div>
-        <div class="carousel-item" js-carousel-item>
-          <a href="#0">
-            <img src="assets/img/slide-02.jpg" alt="Offre 2" />
-            <div class="caption">
-              <h2>Lorem ipsum dolor sit amet.</h2>
-              <button class="btn-more">En savoir plus</button>
-            </div>
-          </a>
-        </div>
-        <div class="carousel-item" js-carousel-item>
-          <a href="#0">
-            <img src="assets/img/slide-03.jpg" alt="Offre 3" />
-            <div class="caption">
-              <h2>Pellentesque at dapibus purus. Nullam eget erat eu erat aliquam rutrum in non felis.</h2>
-              <button class="btn-more">En savoir plus</button>
-            </div>
-          </a>
-        </div>
-        <div class="carousel-item" js-carousel-item>
-          <a href="#0">
-            <img src="assets/img/slide-04.jpg" alt="Offre 4" />
-            <div class="caption">
-              <h2>Donec tellus elit, hendrerit condimentum fringilla eget, vehicula in lorem. Vestibulum aliquam rutrum
-                metus,
-                a iaculis lacus consectetur non</h2>
-              <button class="btn-more">En savoir plus</button>
-            </div>
-          </a>
-        </div>
-        <div class="prev nav-btn carousel-arrow prev" data-carousel-arrows data-dir="prev"><img
-            src="assets/img/arrow-left.png" alt="Image précédente"></div>
-        <div class="next nav-btn carousel-arrow next" data-carousel-arrows data-dir="next"><img
-            src="assets/img/arrow-right.png" alt="Image suivante"></div>
-        <div class="carousel-dots" data-carousel-dots>
-          <button type="button" class="dots" data-active-dot js-data-dots data-dots-index="1"> </button>
-          <button type="button" class="dots" js-data-dots data-dots-index="2"> </button>
-          <button type="button" class="dots" js-data-dots data-dots-index="3"> </button>
-          <button type="button" class="dots" js-data-dots data-dots-index="4"> </button>
-        </div>
+
+    <!-- BREAD CRUMB -->
+    <section id="breadcrumb">
+      <ul class="breadcrumb">
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Particuliers</a></li>
+        <li>Je choisis énergem</li>
+      </ul>
+    </section>
+
+    <!-- CHOICE -->
+    <section id="choice">
+      <div class="image"><img src="assets/img/choice.jpg" alt=""></div>
+      <div class="text">
+        <h2>Je choisis Énergem</h2>
+        <p> 97% des clients sont satisfaits de la qualité de service énergem*. Vous aussi, rejoignez énergem et profitez
+          d'une qualité de service reconnue!</p>
+        <p>Fournisseur d’énergies et surtout de confiance, énergem met à votre disposition une équipe spécialisée dans
+          les métiers de l'énergie et n’hésite pas à s’engager clairement sur sa qualité de service.</p>
       </div>
-      <!--div class="navigation">
-        <div class="prev nav-btn"><img src="assets/img/arrow-left.png" alt="Image précédente"></div>
-        <div class="next nav-btn"><img src="assets/img/arrow-right.png" alt="Image suivante"></div>
+    </section>
+
+    <!-- QUALITY -->
+    <section id="quality">
+
+      <div class="text">
+        <h2>La qualité avant tout</h2>
+        <p> Sed vel felis vitae lacus tristique molestie. Aliquam aliquet metus lacus, quis laoreet erat maximus ac.
+          Etiam sit amet
+          enim non lacus blandit rhoncus in sit amet odio. Phasellus et dignissim ante, imperdiet porta elit.</p>
       </div>
-      <div class="carousel">
-        <div class="item main fade">
-          <a href="#0">
-            <img src="assets/img/slide-01.jpg" alt="Offre 1" />
-            <div class="caption">
-              <h2>Nous offrons deux énergies un seul founisseur et un prix fixe pour l'électricité et le gaz.</h2>
-              <button class="btn-more">En savoir plus</button>
-            </div>
-          </a>
-        </div>
-        <div class="item fade">
-          <a href="#0">
-            <img src="assets/img/slide-02.jpg" alt="Offre 2" />
-            <div class="caption">
-              <h2>Lorem ipsum dolor sit amet.</h2>
-              <button class="btn-more">En savoir plus</button>
-            </div>
-          </a>
-        </div>
-        <div class="item fade"><a href="#0">
-            <img src="assets/img/slide-03.jpg" alt="Offre 3" />
-            <div class="caption">
-              <h2>Pellentesque at dapibus purus. Nullam eget erat eu erat aliquam rutrum in non felis.</h2>
-              <button class="btn-more">En savoir plus</button>
-            </div>
-          </a>
-        </div>
-        <div class="item fade">
-          <a href="#0">
-            <img src="assets/img/slide-04.jpg" alt="Offre 4" />
-            <div class="caption">
-              <h2>Donec tellus elit, hendrerit condimentum fringilla eget, vehicula in lorem. Vestibulum aliquam rutrum
-                metus,
-                a iaculis lacus consectetur non</h2>
-              <button class="btn-more">En savoir plus</button>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="dots-container">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-      </div-->
+      <div class="image"><img src="assets/img/quality.jpg" alt=""></div>
     </section>
 
     <!-- OFFRES -->
@@ -287,73 +213,13 @@
       </div>
     </section>
 
-    <!-- WHY -->
-    <section id="why">
-      <h2>Pourquoi choisir Énergem ?</h2>
-      <div class="why-flex-container">
-        <div class="container">
-          <div class="box"><img src="assets/img/picto-zero-frais.png" alt=""></div>
-          <div class="text">Zéro frais de souscription</div>
-        </div>
-        <div class="container">
-          <div class="box"><img class="why-img-resize" src="assets/img/picto-tranquilite.png" alt="Tranquilité assurée">
-          </div>
-          <div class="text">Tranquilité assurée</div>
-        </div>
-        <div class="container">
-          <div class="box"><img src="assets/img/picto-sans-engagement.png" alt="Sans engagement"></div>
-          <div class="text">Sans engagement</div>
-        </div>
-        <div class="container">
-          <div class="box"><img src="assets/img/picto-fournisseur-confiance.png" alt="Fournisseur de confiance"></div>
-          <div class="text">Fournisseur de confiance</div>
-        </div>
-        <div class="container">
-          <div class="box"><img class="why-img-resize" src="assets/img/picto-satisfait-rembourse.png"
-              alt="Satisfait ou remboursé"></div>
-          <div class="text">Satisfait ou remboursé</div>
-        </div>
-        <div class="container">
-          <div class="box"><img class="why-img-resize" src="assets/img/picto-simplicite-rapidite.png"
-              alt="Simplicité & rapidité"></div>
-          <div class="text">Simplicité & rapidité</div>
-        </div>
-      </div>
-    </section>
 
-    <!-- ADAVANTAGES -->
-    <section id="advantages">
-      <div class="advantages-flex-container">
-        <div class="container">
-          <div class="box img1"><img src="assets/img/micheile-dot-com-lZ_4nPFKcV8-unsplash.jpg"
-              alt="Calculer votre prix">
-          </div>
-          <div class="text">
-            <h3>Calculer votre prix</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-        </div>
-        <div class="container">
-          <div class="box img2"><img src="assets/img/pexels-mart-production-7415039.jpg" alt="Je déménage"></div>
-          <div class="text">
-            <h3>Je déménage</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-        </div>
-        <div class="container">
-          <div class="box img3"><img src="assets/img/pexels-amina-filkins-5413725.jpg" alt="Avantages client"></div>
-          <div class="text">
-            <h3>Avantages client</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+
 
     <!-- FAQ -->
     <section id="faq">
       <div class="container">
-        <p>Une question, un conseil ? Accédez à notre Foire Aux Questions pour trouver la réponse rapidement !</p>
+        <p>Une question, un conseil ? Accédez à notre Foire Aux Questions pour trouver la réponse rapidement!</p>
         <button class="faq-btn-more">Foire aux questions</button>
       </div>
     </section>
