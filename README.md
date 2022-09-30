@@ -55,9 +55,13 @@ Figma file (.fig): [Download](_sources/Energem.fig)
 
 ### HP Mobile
 
-![Capture](_readme-img/integration-hp-mobile.jpg)
+<p align="center">
+   <img src="_readme-img/integration-hp-mobile.jpg" alt="Capture"/>
+</p>
 
-![Capture](_readme-img/integration-hp-mobile-2.jpg)
+<p align="center">
+   <img src="_readme-img/integration-hp-mobile-2.jpg" alt="Capture"/>
+</p>
 
 ## Useful links
 
