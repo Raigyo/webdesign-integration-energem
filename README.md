@@ -37,7 +37,9 @@ Figma file (.fig): [Download](_sources/Energem.fig)
 
 ### Charter for front-end developer
 
-![Capture](_readme-img/figma-charte.png)
+<p align="center">
+   <img src="_readme-img/figma-charte.png" alt="Capture"/>
+</p>
 
 ## Integration process (Grid displayed using dev tools)
 
