@@ -2,7 +2,7 @@
 
 _August - September 2022_
 
-> 🔨 Revamping of an existing website ([Énergem](https://www.energem.fr/)). The design has been made using Figma and Adobe Illustrator during my Web-design training at Sirius School. Integration uses HTML, CSS3 and JS (no framework).
+> 🔨 Revamping of an existing website ([Énergem](https://www.energem.fr/)). The design has been made using Figma and Adobe Illustrator during my Web-design training at Sirius School. Integration uses HTML, CSS3 (Flex & Grid) and JS. No CSS or JS framework have been used.
 
 ---
 
@@ -39,11 +39,11 @@ Figma file (.fig): [Download](_sources/Energem.fig)
 
 ![Capture](_readme-img/figma-charte.png)
 
-## Integration process (Grid using dev tools)
+## Integration process (Grid displayed using dev tools)
 
 ![Capture](_readme-img/integration-hp-grid.jpg)
 
-## Final result (afet HTML / CSS integration)
+## Final result (after HTML / CSS integration)
 
 ### Homepage
 
