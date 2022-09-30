@@ -6,19 +6,16 @@ _August - September 2022_
 
 ---
 
-The website is responsive and the slider and the burger menu are working.
+The website is responsive and the drop down menu, slider and burger menu are working.
 
-Result can bee seen here:
+Result can bee seen here on the Gihub page:
 
-[Homepage](https://raigyo.github.io/webdesign-integration-energem/)
-
-[Level 2](https://raigyo.github.io/webdesign-integration-energem/page.html)
-
-Figma file (.fig)
-
-[Download](_sources/Energem.fig)
+- [Homepage](https://raigyo.github.io/webdesign-integration-energem/)
+- [Level 2](https://raigyo.github.io/webdesign-integration-energem/page.html)
 
 ## Figma project
+
+Figma file (.fig): [Download](_sources/Energem.fig)
 
 ![Capture](_readme-img/project-figma.jpg)
 
