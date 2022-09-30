@@ -14,6 +14,10 @@ Result can bee seen here:
 
 [Level 2](https://raigyo.github.io/webdesign-integration-energem/page.html)
 
+Figma file (.fig)
+
+[Download](_sources/Energem.fig)
+
 ## Figma project
 
 ![Capture](_readme-img/project-figma.jpg)
