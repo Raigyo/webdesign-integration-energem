@@ -18,7 +18,7 @@ Result can bee seen here:
 
 ![Capture](_readme-img/project-figma.jpg)
 
-## Intagration process
+## Integration process
 
 ![Capture](_readme-img/integration-hp-grid.jpg)
 
