@@ -29,7 +29,7 @@ Figma file (.fig): [Download](_sources/Energem.fig)
 
 ### Slider
 
-![Capture](_readme-img/figma-slider.png)
+![Capture](_readme-img/figma-slider-images.png)
 
 ### Drop down menu
 
