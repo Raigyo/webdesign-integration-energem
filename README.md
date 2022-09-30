@@ -39,10 +39,6 @@ Figma file (.fig): [Download](_sources/Energem.fig)
 
 ![Capture](_readme-img/figma-charte.png)
 
-![Capture](_readme-img/project-figma.jpg)
-
-![Capture](_readme-img/project-figma.jpg)
-
 ## Integration process (Grid using dev tools)
 
 ![Capture](_readme-img/integration-hp-grid.jpg)
